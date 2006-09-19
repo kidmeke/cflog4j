@@ -1,5 +1,6 @@
 <!---- Initialize CFLogger as a singelton in application scope. --->
 <cfif not structkeyexists( application, 'init' )>
+	<!--- create the CFLog4j Config object. --->
 	<cfset CFLog4jConfig = createobject( 'component', 'com.cflog4j.CFLog4jConfig' ).init()>
 	<cfset application.CFLog4J = createobject( 'component', 'com.cflog4j.CFLog4j' ).init( CFLog4jConfig ) />
 	<cfset application.init = true />
