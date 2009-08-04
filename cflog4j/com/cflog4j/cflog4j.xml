@@ -20,7 +20,6 @@ limitations under the License.
 	<log4jJar value="log4j-1.2.13.jar" />
 	<!--  location and name of the cflog4j.properties file. By default the program checks the  -->
 	<propertyFile value="cflog4j.properties" />
-	<!-- Log4j will keep monitoring the property file for any changes every so manminutes, 
-		and if the file changes, Log4j will update the configuration. -->
+	<!-- Log4j will keep monitoring the property file for any changes every so many minutes, and if the file changes, Log4j will update the configuration. -->
 	<reloadConfigAfterMinutes value="100" />
 </cflog4j>
